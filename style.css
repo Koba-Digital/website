@@ -28,7 +28,7 @@ body.ch #cur-r{width:80px;height:80px;opacity:1;border-color:var(--gl)}
 nav{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;align-items:center;justify-content:space-between;padding:1.6rem 4rem;transition:background .5s,padding .4s,border-color .5s;border-bottom:.5px solid transparent}
 nav.sc{background:rgba(12,12,10,.93);backdrop-filter:blur(20px);padding:1rem 4rem;border-bottom-color:var(--br)}
 .nav-logo{display:flex;align-items:center;gap:.75rem}
-.nav-logo svg{flex-shrink:0}
+.nav-logo img { flex-shrink: 0; border-radius: 6px; }
 .nav-logo-text{display:flex;flex-direction:column;line-height:1}
 .nav-logo-name{font-family:var(--ss);font-size:.95rem;font-weight:600;letter-spacing:.12em;color:var(--w)}
 .nav-logo-name span{color:var(--g)}
