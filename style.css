@@ -202,7 +202,7 @@ nav.sc{background:rgba(12,12,10,.93);backdrop-filter:blur(20px);padding:1rem 4re
 #servicios{padding:8rem 4rem;background:var(--bs);border-top:.5px solid rgba(114,129,106,0.2);border-bottom:.5px solid rgba(114,129,106,0.2)}
 .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:4rem}
 .svc{border:.5px solid var(--br);border-radius:20px;padding:2.5rem;position:relative;overflow:hidden;transition:border-color .3s,transform .4s var(--ease)}
-.svc::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(114,129,106,.07) 0%,transparent 60%);opacity:0;transition:opacity .4s}
+.svc::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(114,129,106,.07) 0%,transparent 60%);opacity:0;transition:opacity .4s;pointer-events:none}
 .svc:hover{border-color:var(--g);transform:translateY(-6px)}
 .svc:hover::before{opacity:1}
 .svc.ft{border-color:var(--g)}
