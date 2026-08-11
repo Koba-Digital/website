@@ -56,3 +56,30 @@ document.querySelectorAll('a[href^="#"]').forEach(function(a){
     if(t){ e.preventDefault(); t.scrollIntoView({behavior:'smooth'}); }
   });
 });
+
+// HAMBURGER MENU
+const ham = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+const mmClose = document.getElementById('mm-close');
+
+if (ham) {
+  ham.addEventListener('click', () => {
+    ham.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+    document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+  });
+}
+if (mmClose) {
+  mmClose.addEventListener('click', () => {
+    ham.classList.remove('open');
+    mobileMenu.classList.remove('open');
+    document.body.style.overflow = '';
+  });
+}
+document.querySelectorAll('.mobile-menu a').forEach(a => {
+  a.addEventListener('click', () => {
+    ham.classList.remove('open');
+    mobileMenu.classList.remove('open');
+    document.body.style.overflow = '';
+  });
+});
